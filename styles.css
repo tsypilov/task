@@ -34,12 +34,41 @@ h2 {
     padding: 5px 0 0;
 }
 
-.block p {
-    font-size: 20px;
+.download {
+    padding-top: 10px;
+    text-align: center;
 }
 
 .list {
     text-align: left;
+}
+
+.list ol li {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.list ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.list ul li:before {
+    content: "- ";
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:active {
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media screen and (min-device-width: 425px) {
@@ -51,7 +80,11 @@ h2 {
         padding: 30px 50px 10px;
     }
 
-    .block p {
+    .list ol li {
+        font-size: 16px;
+    }
+
+    .list ul li {
         font-size: 16px;
     }
 }
